@@ -1,5 +1,3 @@
-
-
 @extends('frontpages.layouts.main')
 
 @php

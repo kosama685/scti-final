@@ -28,18 +28,18 @@ Route::get('/about-us', [FrontendController::class, 'about_us'])->name('about-us
 Route::get('/faqs', [FrontendController::class, 'faqs'])->name('faqs');
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 Route::get('/welcome', [FrontendController::class, 'welcome'])->name('welcome');
-// Route::get('/login', [FrontendController::class, 'login'])->name('login');
-// Route::get('/business-login', [FrontendController::class, 'business_login'])->name('business-login');
+Route::get('/login', [FrontendController::class, 'login'])->name('login');
+Route::get('/business-login', [FrontendController::class, 'business_login'])->name('business-login');
 
 
 
 
-Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
-Route::get('login', [CustomAuthController::class, 'index'])->name('login');
-Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
-Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
-Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
-Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
+// Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
+// Route::get('login', [CustomAuthController::class, 'index'])->name('login');
+// Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
+// Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
+// Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
+// Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
 
 
 

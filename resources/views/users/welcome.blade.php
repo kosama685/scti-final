@@ -1,5 +1,6 @@
 
 
+@include('header')
 
  
 <section class="home-banrwrp">
